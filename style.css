@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.nav-wrapper {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main .title {
+    display: flex;
+    justify-content: center;
+}
+
+main .About {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.ppur {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: sans-serif;
+}
