@@ -17,29 +17,36 @@
 	</head>
 
 	<body>
-
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<!-- NAVBAR-->
+		<header class="navbar navbar-expand-lg navbar-light shadow-sm justify-content-center">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">About me</a>
+				<div class="w-50 d-flex justify-content-start">
+					<h3 class="text-center">Pakpur Blog</h3>
+				</div>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-link active" aria-current="page" href="contact.html">Sosmed</a>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+					<div class="navbar-nav w-50 d-flex flex-row justify-content-center align-items-center">
+
+							<a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="#">Home</a>
+							<a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="contact.html">Sosmed</a>
+							<a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="gallery.html">Gallery</a>
 					</div>
-				</div>
 			</div>
-			<img src="asset/ppanime.webp" alt="p" width="100" height="50">
-		</nav>
-		<div class="d-flex justify-content-center p-4">
-			<img src="asset/ppur.jpeg" alt="ppur" class="rounded-circle" width="300" height="300">
+		</header>
+		
+		<!-- GAMBAR PAKPUR-->
+		<div class="d-flex py-4 justify-content-center pt-2 flex-column align-content-center w-75 m-auto">
+			<img src="asset/ppur.jpeg" alt="ppur" class="m-auto mt-4 text-center rounded-circle" width="300" height="300">
 		</div>
-		<div class="d-flex justify-content-between">
-			<article>
-				<p class="fw-normal">Halo! Saya adalah Purwanto, seorang Guru Perangkat Lunak dengan latar belakang yang
+		
+		<!-- ARTICLE PAKPUR-->
+		<article class="d-flex justify-content-center py-3 align-items-center flex-wrap w-75 m-auto">
+			<h1 class="text-center py-4">About Me</h1>
+				<p class="fw-normal text-center">Halo! Saya adalah Purwanto, seorang Guru Perangkat Lunak dengan latar belakang yang
 					kuat
 					dalam dunia informatika. Saya
 					tumbuh dan dibesarkan di Jakarta, ibu kota Indonesia. Setelah menyelesaikan pendidikan
@@ -77,8 +84,29 @@
 					berkolaborasi
 					dengan banyak orang yang
 					memiliki hasrat yang sama dalam dunia teknologi informasi.</p>
-			</article>
-		</div>
+		</article>
+
+		<!-- FOOTER -->
+		<footer class="d-flex justify-content-around flex-wrap align-content-center shadow-lg bg-gradient p-3">
+			<div class="d-flex flex-column text-center text-secondary fw-bold">
+				<h4>Made By</h4>
+				<p>Imron</p>
+				<p>Syafiq</p>
+				<p>Rafi Salman</p>
+			</div>
+			<div class="d-flex flex-column text-center text-secondary fw-bold">
+				<h4>About Our Teams</h4>
+				<p>SMK ANTARTIKA 2 SIDOARJO</p>
+				<p>Indonesia</p>
+				<p>X RPL 2</p>
+			</div>
+			<div class="d-flex flex-column text-center text-secondary">
+				<h4>Technologies using</h4>
+				<p class="text-primary fs-5 fw-bold">Bootstrap</p>
+				<p class="text-dark">Copyright 2023 All Right Reserved</p>
+				
+			</div>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"></script>
