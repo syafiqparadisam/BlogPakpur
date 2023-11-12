@@ -10,9 +10,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        nav {
-            margin: 0;
+        body {
             padding: 0;
+            margin: 0;
+        }
+
+        header {
+            margin-right: 0;
+        }
+
+        a {
+            float: right;
+        }
+
+        .card-body1:hover {
+            box-shadow: 3px -3px 10px pink, -3px 3px 10px yellow, 0 0 5px black;
+        }
+
+        .card-body1 {
+            border: 1px double green;
+            border-radius: 20px;
+        }
+
+        .card-body2:hover {
+            box-shadow: 3px 3px 10px blue, -3px -3px 10px whitesmoke, -3px -3px 5px aqua
+        }
+
+        .card-body2 {
+            border: 1px double green;
+            border-radius: 20px;
+        }
+
+        .card-body3:hover {
+            box-shadow: 3px 3px 10px aquamarine, -3px -3px 10px rgb(121, 121, 255), 3px 3px 5px blue;
+        }
+
+        .card-body3 {
+            border: 1px double green;
+            border-radius: 20px;
+        }
+
+        .card-body4:hover {
+            box-shadow: -3px -3px 10px green, 3px 3px 10px greenyellow;
+        }
+
+        .card-body4 {
+            border: 1px double green;
+            border-radius: 20px;
+        }
+
+        .card-body5:hover {
+            box-shadow: 2px 5px 5px black, -3px 3px 10px red, -2px -3px 10px blue
+        }
+
+        .card-body5 {
+            border: 1px double green;
+            border-radius: 20px;
+        }
+
+        .btn {
+            margin-bottom: 9px;
+        }
+
+        footer {
+            padding-top: 10px;
+            /* width: 100vmax; */
         }
     </style>
 </head>
@@ -30,84 +92,80 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav w-50 d-flex flex-row justify-content-center align-items-center">
-    
                     <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="index.html">Home</a>
                     <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="#">Sosmed</a>
-                    <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="gallery.html">Gallery</a>
+                    <a class="nav-link active text-center fw-bolder fs-5" aria-current="page"
+                        href="gallery.html">Gallery</a>
                 </div>
             </div>
     </header>
     <!-- end navbar -->
-    <!-- content -->
-    <div class="row row-cols-1 row-cols- g-1 pt-3 p-1 pb-3">
-        <div class="col">
-            <div class="card h-100">
-                <img src="asset/kisspng-tiktok-social-media-video-musical-ly-mobile-app-tiktok-musically-sticker-by-bibek-kumar-shah-5c5c7d2cf3f312.7804334315495652289992.png"
-                    class="card-img-top-right" alt="tiktok" width="70" height="70">
-                <div class="card-body">
-                    <h5 class="card-title">Tiktok</h5>
-                    <p class="card-text">I'm Programming</p>
-                </div>
-            </div>
-        </div>
-        <div class="row-cols-0">
-            <div class="card h-100">
-                <img src="asset/kisspng-facebook-logo-social-media-computer-icons-icon-facebook-drawing-5ab02fb70b9ad5.9813355115214959910475.png"
-                    class="card-img-top-right" alt="facebook" width="70" height="70">
-                <div class="card-body">
-                    <h5 class="card-title">Facebook</h5>
-                    <p class="card-text">Halo Bro</p>
-                </div>
-            </div>
-        </div>
-        <div class="row-cols-0">
-            <div class="card h-100">
-                <img src="asset/transparent-social-icon-instagram-icon-5fb733ea802656.9406725016058418985249-removebg-preview.png"
-                    class="card-img-top-right" alt="ig" width="70" height="70">
-                <a href="http://"></a>
-                <div class="card-body">
-                    <h5 class="card-title">Instagram</h5>
-                    <p class="card-text">Apa Kabar</p>
-                </div>
-            </div>
-        </div>
-        <div class="row-cols-0">
-            <div class="card h-100">
-                <img src="asset/image-removebg-preview (1).png" class="card-img-top-right" alt="whatsapp" width="70"
-                    height="70">
-                <div class="card-body">
-                    <h5 class="card-title">Wa</h5>
-                    <p class="card-text">Wa nya gk bisa bro</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end content -->
 
-    <!-- FOOTER -->
-    <footer class="d-flex justify-content-around flex-wrap align-content-center shadow-lg bg-gradient p-3">
-        <div class="d-flex flex-column text-center text-secondary fw-bold">
-            <h4>Made By</h4>
-            <p>Imron</p>
-            <p>Syafiq</p>
-            <p>Rafi Salman</p>
+    <!-- content -->
+    <div class="row ">
+        <div class="card-body1 col-sm-2 m-5">
+            <img src="asset/ig.png" width="100px" class="card-img-right" alt="ig">
+            <div class="card-body">
+                <h5 class="card-title">Instagram</h5>
+                <a href="#" class="btn btn-primary">Klik Disini</a>
+            </div>
         </div>
-        <div class="d-flex flex-column text-center text-secondary fw-bold">
-            <h4>About Our Teams</h4>
-            <p>SMK ANTARTIKA 2 SIDOARJO</p>
-            <p>Indonesia</p>
-            <p>X RPL 2</p>
+        <div class="card-body2 col-sm-2 m-5">
+            <img src="asset/facebook.png" width="100px" class="card-img-right" alt="facebook">
+            <div class="card-body">
+                <h5 class="card-title">Facebook</h5>
+                <a href="#" class="btn btn-primary">Klik Disini</a>
+            </div>
+
         </div>
-        <div class="d-flex flex-column text-center text-secondary">
-            <h4>Technologies using</h4>
-            <p class="text-primary fs-5 fw-bold">Bootstrap</p>
-            <p class="text-dark">Copyright 2023 All Right Reserved</p>
-    
+        <div class="card-body3 col-sm-2 m-5">
+            <img src="asset/telegram.png" width="100px" class="card-img-right" alt="telegram">
+            <div class="card-body">
+                <h5 class="card-title">Telegram</h5>
+                <a href="#" class="btn btn-primary">Klik Disini</a>
+            </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        <div class="card-body4 col-sm-2 m-5">
+            <img src="asset/wa.png" width="100px" class="card-img-right" alt="wa">
+            <div class="card-body">
+                <h5 class="card-title">Whatss app</h5>
+                <a href="#" class="btn btn-primary">Klik Disini</a>
+            </div>
+        </div>
+        <div class="card-body5 col-sm-2 m-5">
+            <img src="asset/tiktok.png" width="100px" class="card-img-right" alt="tiktok">
+            <div class="card-body">
+                <h5 class="card-title">Tiktok</h5>
+                <a href="#" class="btn btn-primary">Klik Disini</a>
+            </div>
+        </div>
+        <!-- end content -->
+
+
+        <!-- FOOTER -->
+        <footer class="d-flex justify-content-around flex-row align-content-center shadow-lg bg-gradient">
+            <div class="d-flex flex-column text-center text-secondary fw-bold">
+                <h4>Made By</h4>
+                <p>Imron</p>
+                <p>Syafiq</p>
+                <p>Rafi Salman</p>
+            </div>
+            <div class="d-flex flex-column text-center text-secondary fw-bold">
+                <h4>About Our Teams</h4>
+                <p>SMK ANTARTIKA 2 SIDOARJO</p>
+                <p>Indonesia</p>
+                <p>X RPL 2</p>
+            </div>
+            <div class="d-flex flex-column text-center text-secondary">
+                <h4>Technologies using</h4>
+                <p class="text-primary fs-5 fw-bold">Bootstrap</p>
+                <p class="text-dark">&#169; Copyright 2023 All Right Reserved</p>
+
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
