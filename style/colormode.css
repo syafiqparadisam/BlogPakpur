@@ -1,0 +1,42 @@
+.icon {
+    background-image: url('asset/UI ICON/moon.png');
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-size: cover;
+    cursor:pointer;
+}
+
+:root{
+ --primary-color:#edf2fc;
+ --secondary-color:#212121;
+}
+
+.colormode{
+ background: var(--primary-color);
+ color: var(--secondary-color);
+}
+.dark-theme{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.navbar {
+	background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.footer {
+	background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.dark-theme .navbar{
+    background-color: #808080;
+    color: var(--primary-color);
+}
+
+.dark-theme .footer{
+    background-color: #808080;
+    color: var(--primary-color);
+}

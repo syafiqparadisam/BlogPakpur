@@ -5,83 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+	<link href="style/header-footer.css" rel="stylesheet">
+    <link href="style/colormode.css" rel="stylesheet">
+	<link href="style/Contact.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+		<link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        nav {
-            margin: 0;
-            padding: 0;
+        #icon{
+            width: 30px;
+            cursor: pointer;
         }
+		
+		* {
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: Arial, sans-serif;
+		}
     </style>
 </head>
 
-<body>
+<body class="colormode">
     <!-- navbar -->
-    <header class="navbar navbar-expand-lg navbar-light shadow-sm justify-content-center">
-        <div class="container-fluid">
-            <div class="w-50 d-flex justify-content-start">
-                <h3 class="text-center">Pakpur Blog</h3>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav w-50 d-flex flex-row justify-content-center align-items-center">
-    
-                    <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="#">Sosmed</a>
-                    <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="gallery.html">Gallery</a>
-                </div>
-            </div>
-    </header>
+	   <header class="navbar">
+			<div class="container">
+			  <div class="brand">
+				<h3 class="text-center">Pakpur Blog</h3>
+			  </div>
+			  <button class="navbar-toggler" id="navbar-toggler">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="navbar-menu" id="navbar-menu">
+				<nav class="nav-links">
+				  <a class="nav-link active" href="index.html">Home</a>
+				  <a class="nav-link active" href="#">Contact</a>
+				  <a class="nav-link active" href="gallery.html">Gallery</a>
+				</nav>
+			  </div>
+			</div>
+		<img src="asset/UI ICON/moon.png" id="icon" alt="Moon Icon">
+	  </header>
     <!-- end navbar -->
     <!-- content -->
-    <div class="row row-cols-1 row-cols- g-1 pt-3 p-1 pb-3">
-        <div class="col">
-            <div class="card h-100">
-                <img src="asset/kisspng-tiktok-social-media-video-musical-ly-mobile-app-tiktok-musically-sticker-by-bibek-kumar-shah-5c5c7d2cf3f312.7804334315495652289992.png"
-                    class="card-img-top-right" alt="tiktok" width="70" height="70">
-                <div class="card-body">
-                    <h5 class="card-title">Tiktok</h5>
-                    <p class="card-text">I'm Programming</p>
-                </div>
-            </div>
-        </div>
-        <div class="row-cols-0">
-            <div class="card h-100">
-                <img src="asset/kisspng-facebook-logo-social-media-computer-icons-icon-facebook-drawing-5ab02fb70b9ad5.9813355115214959910475.png"
-                    class="card-img-top-right" alt="facebook" width="70" height="70">
-                <div class="card-body">
-                    <h5 class="card-title">Facebook</h5>
-                    <p class="card-text">Halo Bro</p>
-                </div>
-            </div>
-        </div>
-        <div class="row-cols-0">
-            <div class="card h-100">
-                <img src="asset/transparent-social-icon-instagram-icon-5fb733ea802656.9406725016058418985249-removebg-preview.png"
-                    class="card-img-top-right" alt="ig" width="70" height="70">
-                <a href="http://"></a>
-                <div class="card-body">
-                    <h5 class="card-title">Instagram</h5>
-                    <p class="card-text">Apa Kabar</p>
-                </div>
-            </div>
-        </div>
-        <div class="row-cols-0">
-            <div class="card h-100">
-                <img src="asset/image-removebg-preview (1).png" class="card-img-top-right" alt="whatsapp" width="70"
-                    height="70">
-                <div class="card-body">
-                    <h5 class="card-title">Wa</h5>
-                    <p class="card-text">Wa nya gk bisa bro</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="contact">
+		   <div class="content">
+			 <h2>Contact us</h2>
+			 <p>Apabila ada keperluan,kamu dapat mengontak dari salah satu opsi sosial media berikut!,dan dimohon pengertiannya Apabila slow respond
+			 ,terima kasih ;)</p>
+			</div>
+			   <aside>
+				<section class="contact-section">
+		<div class="contact-item">
+		  <a href="https://www.facebook.com/pangeran.kancil.399" target="_blank" style="text-decoration:none">
+			<img src="asset/Facebook.png" alt="Facebook Icon">
+			<p>Ipunk Kancil</p>
+		  </a>
+		</div>
+		<div class="contact-item">
+		  <a href="https://www.instagram.com/pangerankancil/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"  style="text-decoration:none">
+			<img src="asset/Instagram.png" alt="Instagram Icon">
+			<p>Pangeran Kancil</p>
+		  </a>
+		</div>
+		<div class="contact-item">
+		  <a href="https://www.tiktok.com/@ipunkkancil3?_t=8gFBUZT6yif&_r=1" target="_blank" style="text-decoration:none">
+			<img src="asset/Tiktok.png" alt="TikTok Icon" >
+			<p>Ipunk Kancil69</p>
+		  </a>
+		</div>
+		 </aside>
+    </section>
     <!-- end content -->
 
     <!-- FOOTER -->
@@ -105,6 +104,10 @@
     
         </div>
     </footer>
+
+    <script src="colormode.js">
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

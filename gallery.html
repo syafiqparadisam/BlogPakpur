@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<link href="style/header-footer.css" rel="stylesheet">
+    <link href="style/colormode.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
@@ -11,14 +13,14 @@
             padding: 0;
             margin: 0;
         }
-
-        div {
+		
+		.gallerypur {
            display: flex;
            justify-content: center;
            align-items: center;
            flex-wrap: wrap;
         }
-        div img {
+        .gallerypur img {
            width: 400px;
            height: 300px;
            border: 2px solid #ff3d0036;
@@ -28,73 +30,89 @@
            margin: 10px;
            transition: 400ms;
         }
-        div img:hover {
+        .gallerypur img:hover {
            filter: grayscale(1);
            transform: scale(1.03);
         }
+        #icon{
+            width: 30px;
+            cursor: pointer;
+        }
+		
+		* {
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: Arial, sans-serif;
+		}
     </style>
 </head>
-<body>
+<body class="colormode">
     <!-- NAVBAR-->
-    <header class="navbar navbar-expand-lg navbar-light shadow-sm justify-content-center">
-        <div class="container-fluid">
-            <div class="w-50 d-flex justify-content-start">
-                <h3 class="text-center">Pakpur Blog</h3>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav w-50 d-flex flex-row justify-content-center align-items-center">
-    
-                    <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="contact.html">Sosmed</a>
-                    <a class="nav-link active text-center fw-bolder fs-5" aria-current="page" href="#">Gallery</a>
-                </div>
-            </div>
-    </header>
-
-    <!--gallery main-->
-   <div>
+    <header class="navbar">
+    <div class="container">
+      <div class="brand">
+        <h3 class="text-center">Pakpur Blog</h3>
+      </div>
+      <button class="navbar-toggler" id="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-menu" id="navbar-menu">
+        <nav class="nav-links">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
+          <a class="nav-link active" href="#">Gallery</a>
+        </nav>
+      </div>
+    </div>
+    <img src="asset/UI ICON/moon.png" id="icon" alt="Moon Icon">
+  </header>
+	
+	<!--gallery main-->
+   <div class="gallerypur" >
        <img src="asset/ppur.jpeg">
-       <img src="asset/gallerypur/pur2.jpg">
-       <img src="asset/gallerypur/pur3.jpg">
-       <img src="asset/gallerypur/pur4.jpg">
-       <img src="asset/gallerypur/pur5.jpg">
-       <img src="asset/gallerypur/pur6.jpg">
-       <img src="asset/gallerypur/pur7.jpg">
-       <img src="asset/gallerypur/pur8.jpg">
-       <img src="asset/gallerypur/pur9.jpg">
-       <img src="asset/gallerypur/pur10.jpg">
+       <img src="asset/gallerypur/pur1.jpg">
+       <img src="asset/gallerypur/pur (2).jpg">
+       <img src="asset/gallerypur/pur (3).jpg">
+       <img src="asset/gallerypur/pur (4).jpg">
+       <img src="asset/gallerypur/pur (5).jpg">
+       <img src="asset/gallerypur/pur (6).jpg">
+       <img src="asset/gallerypur/pur (7).jpg">
+       <img src="asset/gallerypur/pur (8).jpg">
+       <img src="asset/gallerypur/pur (9).jpg">
    </div>
     
 
-    <!--FOOTER--> 
     <footer class="d-flex justify-content-around flex-wrap align-content-center shadow-lg bg-gradient p-3">
-        <div class="d-flex flex-column text-center text-secondary fw-bold">
-            <h4>Made By</h4>
-            <p>Imron</p>
-            <p>Syafiq</p>
-            <p>Rafi Salman</p>
-        </div>
-        <div class="d-flex flex-column text-center text-secondary fw-bold">
-            <h4>About Our Teams</h4>
-            <p>SMK ANTARTIKA 2 SIDOARJO</p>
-            <p>Indonesia</p>
-            <p>X RPL 2</p>
-        </div>
-        <div class="d-flex flex-column text-center text-secondary">
-            <h4>Technologies using</h4>
-            <p class="text-primary fs-5 fw-bold">Bootstrap</p>
-            <p class="text-dark">Copyright 2023 All Right Reserved</p>
-    
-        </div>
-    </footer>
+			<div class="d-flex flex-column text-center text-secondary fw-bold">
+				<h4>Made By</h4>
+				<p>Imron</p>
+				<p>Syafiq</p>
+				<p>Rafi Salman</p>
+			</div>
+			<div class="d-flex flex-column text-center text-secondary fw-bold">
+				<h4>About Our Teams</h4>
+				<p>SMK ANTARTIKA 2 SIDOARJO</p>
+				<p>Indonesia</p>
+				<p>X RPL 2</p>
+			</div>
+			<div class="d-flex flex-column text-center text-secondary">
+				<h4>Technologies using</h4>
+				<p class="text-primary fs-5 fw-bold">Bootstrap</p>
+				<p class="text-dark">Copyright 2023 All Right Reserved</p>
+				
+			</div>
+	</footer>
+  
+    <script src="colormode.js">
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>
