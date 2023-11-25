@@ -1,0 +1,77 @@
+
+:root{
+ --primary-color:#edf2fc;
+ --secondary-color:#212121;
+}
+
+.colormode{
+ background: var(--primary-color);
+ color: var(--secondary-color);
+}
+.dark-theme{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Contact section styles */
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+.contact-item {
+  text-align: center;
+ 
+}
+
+.contact-item img {
+  width: 50px;
+  height: 50px; 
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 0.9rem;
+  font-weight: bold;
+   padding: 10;
+}
+
+.contact
+{
+    position:relative;
+    min-height:100vh;
+    padding:50px 100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.contact .content
+{
+	max-width:800px;
+	text-align:center;
+}
+
+.contact .content h2
+{
+	font-size:36px;
+	font-weight:500;
+}
+
+.contact .content p
+{
+	font-weight:300;
+}
